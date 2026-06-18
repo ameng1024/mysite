@@ -1,24 +1,28 @@
 {
-  "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
+    "lib": ["DOM", "ES2023"],
+    "jsx": "react-jsx",
+    "target": "ES2023",
+    "noEmit": true,
+    "skipLibCheck": true,
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "moduleDetection": "force",
+    "moduleResolution": "bundler",
+    "verbatimModuleSyntax": true,
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "baseUrl": ".",
-    "strictNullChecks": true,
-    "allowJs": false,
-    "declaration": true,
-    "plugins": [
-      {
-        "name": "@astrojs/ts-plugin"
-      }
-    ],
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@assets/*": ["src/assets/*"],
-      "@constants/*": ["src/constants/*"],
-      "@utils/*": ["src/utils/*"],
-      "@i18n/*": ["src/i18n/*"],
-      "@layouts/*": ["src/layouts/*"],
-      "@/*": ["src/*"]
+      "@theme/*": ["theme/*"]
     }
   },
-  "include": ["src/**/*"]
+  "include": ["docs", "theme", "plugins", "rspress.config.ts"],
+  "mdx": {
+    "checkMdx": true
+  }
 }

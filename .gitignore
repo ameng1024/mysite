@@ -1,8 +1,8 @@
 # build output
 dist/
+.rspress/
 
 # generated types
-.astro/
 .pnpm-store/
 
 # dependencies

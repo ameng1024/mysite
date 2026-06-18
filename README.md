@@ -3,16 +3,16 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/ameng404/mysite)
 ![GitHub stars](https://img.shields.io/github/stars/ameng404/mysite?style=social)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Astro](https://img.shields.io/badge/Astro-4.x-FF5D01?logo=astro&logoColor=white)
+![Rspress](https://img.shields.io/badge/Rspress-2.x-000000?logo=rspack&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-06B6D4?logo=tailwindcss&logoColor=white)
 
-一个基于 Astro 构建的现代化静态博客系统，专注于技术分享和知识沉淀。
+一个基于 Rspress 构建的现代化静态博客系统，专注于技术分享和知识沉淀。
 
 ## ✨ 特性
 
 ### 🚀 现代技术栈
-- **Astro 4.x** - 高性能静态站点生成器
+- **Rspress 2.x** - 基于 Rspack 的静态站点生成器
 - **TypeScript** - 类型安全的开发体验
 - **Tailwind CSS** - 实用优先的 CSS 框架
 - **Svelte 5** - 交互式组件支持
@@ -21,9 +21,9 @@
 ### 📝 内容管理
 - **Markdown 优先** - 专注于内容创作
 - **内容集合** - 类型安全的文章管理
-- **多语言支持** - 中英文内容展示
+- **中文内容** - 专注中文技术博客展示
 - **标签分类** - 灵活的内容组织
-- **搜索功能** - 基于 Pagefind 的全文搜索
+- **搜索功能** - 基于 Rspress 内置全文搜索
 
 ### 🎨 用户体验
 - **暗色/亮色模式** - 自动跟随系统偏好
@@ -43,23 +43,13 @@
 
 ```
 mysite/
-├── src/
-│   ├── components/     # 可复用组件
-│   │   ├── control/    # 控制组件
-│   │   ├── misc/       # 杂项组件
-│   │   └── widget/     # 侧边栏组件
-│   ├── content/        # 博客内容
-│   │   └── posts/      # 文章目录
-│   │       ├── guide/  # 指南类文章
-│   │       ├── javascript/ # JavaScript 文章
-│   │       └── network/    # 网络技术文章
-│   ├── layouts/        # 页面布局
-│   ├── pages/          # 页面路由
-│   ├── styles/         # 样式文件
-│   └── utils/          # 工具函数
-├── public/             # 静态资源
-├── scripts/            # 构建脚本
-└── config/             # 配置文件
+├── docs/               # 博客内容
+│   ├── posts/          # 文章目录
+│   └── public/         # 静态资源
+├── theme/              # 自定义主题（React 组件）
+├── shared/             # 共享配置、样式、工具
+├── plugins/            # Rspress 插件
+└── rspress.config.ts   # 构建配置
 ```
 
 ## 🚀 快速开始
@@ -82,7 +72,7 @@ npm install
 # 启动开发服务器
 pnpm run dev
 
-# 访问 http://localhost:4321
+# 访问 http://localhost:5173
 ```
 
 ### 构建项目
@@ -99,7 +89,7 @@ pnpm run preview
 # 使用脚本创建新文章
 pnpm run new-post
 
-# 或手动在 src/content/posts/ 目录创建
+# 或手动在 docs/posts/ 目录创建
 ```
 
 ## 📚 内容管理
@@ -139,9 +129,9 @@ lang: zh-CN           # 文章语言
 - 自定义样式：`src/styles/variables.styl`
 
 ### 配置修改
-- 博客配置：`src/config.ts`
-- 构建配置：`astro.config.mjs`
-- 主题配置：`src/styles/variables.styl`
+- 博客配置：`shared/config.ts`
+- 构建配置：`rspress.config.ts`
+- 主题配置：`shared/styles/variables.styl`
 
 ## 📦 部署
 
@@ -164,18 +154,17 @@ pnpm run build
 ## 🔧 技术栈详情
 
 ### 核心框架
-- **[Astro](https://astro.build/)** - 静态站点生成器
+- **[Rspress](https://rspress.rs/)** - 静态站点生成器
 - **[TypeScript](https://www.typescriptlang.org/)** - 类型系统
 - **[Tailwind CSS](https://tailwindcss.com/)** - 样式框架
 
 ### 内容系统
-- **[Pagefind](https://pagefind.app/)** - 静态搜索
+- **[Rspress Search](https://rspress.rs/)** - 内置全文搜索
 - **[Remark](https://remark.js.org/)** - Markdown 处理
 - **[Rehype](https://github.com/rehypejs/rehype)** - HTML 处理
 
 ### 交互组件
-- **[Svelte](https://svelte.dev/)** - 组件框架
-- **[Swup](https://swup.js.org/)** - 页面过渡
+- **[React](https://react.dev/)** - 主题组件
 - **[PhotoSwipe](https://photoswipe.com/)** - 图片查看器
 
 ### 开发工具
@@ -206,7 +195,7 @@ pnpm run build
 
 感谢以下开源项目的贡献：
 
-- [Astro](https://astro.build/) - 优秀的静态站点框架
+- [Rspress](https://rspress.rs/) - 优秀的静态站点框架
 - [Tailwind CSS](https://tailwindcss.com/) - 实用的 CSS 框架
 - [所有依赖库的维护者](package.json)
 
