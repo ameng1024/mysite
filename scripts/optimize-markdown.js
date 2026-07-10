@@ -74,7 +74,7 @@ function normalizeCodeFenceLanguages(body) {
 
 function optimizeFile(filePath) {
   const raw = fs.readFileSync(filePath, 'utf-8');
-  const { frontmatter, body, meta } = parseFrontmatter(raw);
+  const { frontmatter, body } = parseFrontmatter(raw);
 
   let nextBody = body;
   nextBody = removeDuplicateTitle(nextBody);

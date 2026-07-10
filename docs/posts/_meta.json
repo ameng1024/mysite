@@ -1,0 +1,18 @@
+[
+  "index",
+  {
+    "type": "dir",
+    "name": "css",
+    "label": "CSS"
+  },
+  {
+    "type": "dir",
+    "name": "javascript",
+    "label": "JavaScript"
+  },
+  {
+    "type": "dir",
+    "name": "network",
+    "label": "网络"
+  }
+]

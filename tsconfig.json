@@ -6,6 +6,8 @@
     "noEmit": true,
     "skipLibCheck": true,
     "useDefineForClassFields": true,
+
+    /* modules */
     "module": "ESNext",
     "moduleDetection": "force",
     "moduleResolution": "bundler",
@@ -13,15 +15,13 @@
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
+
+    /* type checking */
     "strict": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "baseUrl": ".",
-    "paths": {
-      "@theme/*": ["theme/*"]
-    }
+    "noUnusedParameters": true
   },
-  "include": ["docs", "theme", "plugins", "rspress.config.ts"],
+  "include": ["docs", "theme", "rspress.config.ts", "theme/data/recent-posts.json", "theme/data/contributions.json"],
   "mdx": {
     "checkMdx": true
   }

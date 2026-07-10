@@ -1,0 +1,27 @@
+[
+  {
+    "text": "文章",
+    "link": "/posts/",
+    "activeMatch": "/posts/"
+  },
+  {
+    "text": "作品",
+    "link": "/works",
+    "activeMatch": "^/works"
+  },
+  {
+    "text": "面试",
+    "link": "/interview/",
+    "activeMatch": "/interview/"
+  },
+  {
+    "text": "摄影",
+    "link": "https://photos.iameng.cn",
+    "rel": "noopener noreferrer"
+  },
+  {
+    "text": "关于",
+    "link": "/about",
+    "activeMatch": "^/about"
+  }
+]

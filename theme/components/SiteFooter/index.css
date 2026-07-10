@@ -1,0 +1,30 @@
+.rp-site-footer {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  color: var(--rp-c-text-3);
+}
+
+.rp-site-footer__line {
+  margin: 0;
+}
+
+.rp-site-footer__sep {
+  color: var(--rp-c-text-4);
+}
+
+.rp-site-footer a {
+  color: var(--rp-c-text-2);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.rp-site-footer a:hover {
+  color: var(--rp-c-brand);
+}
+
+.rp-doc-site-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--rp-c-divider-light);
+}

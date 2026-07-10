@@ -1,0 +1,16 @@
+.rp-doc-footer {
+  margin-top: 48px;
+}
+
+.rp-doc-footer__edit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rp-doc-footer__divider {
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--rp-c-divider-light);
+  margin: 48px 0;
+}

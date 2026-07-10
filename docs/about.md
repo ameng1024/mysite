@@ -1,19 +1,44 @@
 ---
-pageType: custom
 title: 关于
+pageType: doc-wide
+sidebar: false
 ---
 
 # 关于我
 
-👨‍💻 一位前端开发工程师，喜欢编写所感兴趣的项目
+你好，我是 **阿猛**，一名前端开发工程师，也是 [iameng.cn](https://iameng.cn) 的创建者。
 
-🌱 不断在学习中，希望能在有限的时间内，学到无限的可能
+## 我是谁
 
-🗒️ 记录所学知识，领略编程之美
+我专注于 **Web 前端开发**，日常工作围绕产品界面、交互体验与前端工程化展开。习惯把遇到的问题和学到的东西写成笔记，这个站点就是我的技术沉淀区——文章、作品、面试整理，都汇聚在这里。
 
+## 技术方向
 
-### 💬 联系我
+| 领域 | 说明 |
+| --- | --- |
+| 主栈 | React、TypeScript、现代 CSS |
+| 熟悉 | Vue、Node.js、Rspack / Vite 构建链 |
+| 关注 | JavaScript 新特性、性能优化、网络协议、组件设计 |
+| 工具 | Git、pnpm、CI/CD、Rspress 静态站点 |
 
-📢 RSS：[订阅本站](https://feedly.com/i/subscription/feed/https://iameng.cn/rss.xml)
+## 一些数据
 
-📮 邮箱: [ameng404@qq.com](mailto:ameng404@qq.com)
+- **5+ 年** 前端开发经验
+- **26 篇** 原创技术文章
+- **3 个** 内容栏目：文章 / 作品 / 面试
+- **GitHub**：[ameng1024](https://github.com/ameng1024) 持续维护个人与开源项目
+
+## 这个站点
+
+**阿猛的日常** 是我的个人站点，域名 [iameng.cn](https://iameng.cn)。你可以在这里：
+
+- 阅读我在 **文章** 栏目发布的技术笔记
+- 在 **作品** 栏目查看项目与 Demo
+- 在 **面试** 栏目浏览面试题与经验整理
+- 在 **[摄影](https://photos.iameng.cn)** 查看日常随拍
+
+## 联系我
+
+📮 邮箱：[ameng1024@foxmail.com](mailto:ameng1024@foxmail.com)
+
+🔗 GitHub：[ameng1024](https://github.com/ameng1024)

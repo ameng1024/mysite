@@ -1,0 +1,18 @@
+.site-nav-title {
+  margin-left: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--rp-c-text-1);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+@media (min-width: 640px) {
+  .site-nav-title {
+    font-size: 1rem;
+  }
+}
+
+.site-nav-title:hover {
+  color: var(--rp-c-brand);
+}
