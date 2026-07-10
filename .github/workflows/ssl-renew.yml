@@ -1,0 +1,46 @@
+name: SSL Renew
+
+on:
+  schedule:
+    # 每周一 UTC 18:00（北京时间周二 02:00）检查续期
+    - cron: '0 18 * * 1'
+  workflow_dispatch:
+    inputs:
+      force_renew:
+        description: 'Force renew even if certificate is still valid'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  renew:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24.x'
+
+      - name: Install Tencent SDK
+        run: npm install --no-save tencentcloud-sdk-nodejs@4
+
+      - name: Renew and deploy SSL
+        env:
+          ACME_EMAIL: ${{ secrets.ACME_EMAIL }}
+          DP_ID: ${{ secrets.DNSPOD_ID }}
+          DP_KEY: ${{ secrets.DNSPOD_TOKEN }}
+          TENCENT_SECRET_ID: ${{ secrets.SECRET_ID }}
+          TENCENT_SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          SSL_DOMAIN: iameng.cn
+          SSL_ALT_DOMAINS: www.iameng.cn
+          CDN_DOMAINS: iameng.cn,www.iameng.cn
+          TENCENT_RESOURCE_TYPE: cdn
+          FORCE_RENEW: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.force_renew == 'true' && '1' || '0' }}
+        run: bash scripts/renew-ssl.sh
