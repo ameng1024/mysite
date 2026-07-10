@@ -30,8 +30,8 @@ jobs:
       - name: Upload to OSS
         uses: chf007/aliyun-oss-upload-action@main
         env:
-          OSS_ACCESS_KEY_ID: ${{ secrets.OSS_KEY_ID }}
-          OSS_ACCESS_KEY_SECRET: ${{ secrets.OSS_KEY_SECRET }}
+          OSS_ACCESS_KEY_ID: ${{ secrets.ALI_ACCESSKEY_ID }}
+          OSS_ACCESS_KEY_SECRET: ${{ secrets.ALI_ACCESSKEY_SECRET }}
         with:
           source-dir: './dist'
           dest-dir: '/'

@@ -30,8 +30,8 @@ jobs:
       - name: Upload COS
         uses: TencentCloud/cos-action@v1
         with:
-          secret_id: ${{ secrets.SECRET_ID }}
-          secret_key: ${{ secrets.SECRET_KEY }}
+          secret_id: ${{ secrets.TX_SECRETID }}
+          secret_key: ${{ secrets.TX_SECRETKEY }}
           cos_bucket: ${{ secrets.BUCKET }}
           cos_region: ap-shanghai
           local_path: dist

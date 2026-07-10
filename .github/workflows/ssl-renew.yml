@@ -36,8 +36,8 @@ jobs:
           ACME_EMAIL: ${{ secrets.ACME_EMAIL }}
           DP_ID: ${{ secrets.DNSPOD_ID }}
           DP_KEY: ${{ secrets.DNSPOD_TOKEN }}
-          TENCENT_SECRET_ID: ${{ secrets.SECRET_ID }}
-          TENCENT_SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          TENCENT_SECRET_ID: ${{ secrets.TX_SECRETID }}
+          TENCENT_SECRET_KEY: ${{ secrets.TX_SECRETKEY }}
           SSL_DOMAIN: iameng.cn
           SSL_ALT_DOMAINS: www.iameng.cn
           CDN_DOMAINS: iameng.cn,www.iameng.cn
